@@ -25,17 +25,17 @@ export class MassCalcPercentPage implements OnInit {
     {
       id: 1,
       value: 1000,
-      unit: "V"
+      unit: "L"
     },
     {
       id: 2,
       value: 1,
-      unit: "mV"
+      unit: "mL"
     },
     {
       id: 3,
       value: 0.001,
-      unit: "µV"
+      unit: "µL"
     }
   ];
   UMass: Unit[] = [

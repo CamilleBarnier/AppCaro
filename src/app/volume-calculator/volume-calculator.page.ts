@@ -53,17 +53,17 @@ export class VolumeCalculatorPage implements OnInit {
     {
       id: 1,
       value: 1,
-      unit: "V"
+      unit: "L"
     },
     {
       id: 2,
       value: 0.001,
-      unit: "mV"
+      unit: "mL"
     },
     {
       id: 3,
       value: 0.000001,
-      unit: "µV"
+      unit: "µL"
     }
   ];
   UMass: Unit[] = [
