@@ -1,0 +1,14 @@
+ion-toolbar{
+    --background: #3b3b3b;
+    --color: white;
+    box-shadow: inset 4px 4px 15px 25px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+ion-content {
+    --background: var(--ion-item-background, var(--ion-background-color,black));
+    --color:white;
+    --align: center;
+}
+h1{
+    text-align:center;
+}

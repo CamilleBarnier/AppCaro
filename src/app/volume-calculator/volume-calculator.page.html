@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Volume Calculator</h1>
+
+  <ion-item>
+     <ion-label>Molecular Weight: </ion-label>
+    <ion-input type="tel" [(ngModel)]="MWeight" name="Molecular Weight" (ionChange)= "calcul()"></ion-input>
+    g/mol
+  </ion-item> 
+  <ion-item>
+    <ion-label>Molarity: </ion-label>
+   <ion-input type="tel" [(ngModel)]="Molarity" name="Molarity" (ionChange)= "calcul()"></ion-input>
+   <ion-select [(ngModel)]="MUnit" interface="action-sheet" (ionChange)= "calcul()" >
+    <ion-select-option *ngFor="let unit of UMolarity" [value] ="unit" [selected]="MUnit" >{{unit.unit}}</ion-select-option>
+  </ion-select>
+ </ion-item> 
+ <ion-item>
+  <ion-label>Desired Weight: </ion-label>
+ <ion-input type="tel" [(ngModel)]="Weight" name="Weight" (ionChange)= "calcul()"></ion-input>
+ <ion-select style="align-self:right" [(ngModel)]="PUnit" interface="action-sheet" (ionChange)= "calcul()">
+  <ion-select-option *ngFor="let unit of UMass" [value] ="unit" [selected]="PUnit" >{{unit.unit}}</ion-select-option>
+ </ion-select> 
+</ion-item> 
+<ion-item>
+  Volume: {{ Output}}
+  <ion-select [(ngModel)]="VUnit" interface="action-sheet" (ionChange)= "calcul()">
+    <ion-select-option *ngFor="let unit of UVolume" [value] ="unit" [selected]="VUnit" >{{unit.unit}}</ion-select-option>
+  </ion-select>
+  
+</ion-item>
+
+</ion-content>
