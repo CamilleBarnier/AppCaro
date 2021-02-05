@@ -111,11 +111,11 @@ export class VolumeCalculatorPage implements OnInit {
     let BoolM = this.validity(this.Molarity);
     let BoolW = this.validity(this.Weight);
     if (BoolM && BoolMW && BoolW){
-      this.Output = parseFloat(this.MWeight) * parseFloat(this.Molarity) * this.MUnit.value  * parseFloat(this.Weight) * this.PUnit.value / this.VUnit.value;
-      console.log(this);
+      let result = parseFloat(this.MWeight) * parseFloat(this.Molarity.replace(',','.')) * this.MUnit.value  * parseFloat(this.Weight.replace(',','.')) * this.PUnit.value / this.VUnit.value;
+      this.Output =result.toPrecision(5);
     }
     else{
-      this.toastr.error("A value is empty", "error", {timeOut:600});
+      console.log(this);
     }
     
   }

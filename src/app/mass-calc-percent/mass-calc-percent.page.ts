@@ -82,11 +82,12 @@ export class MassCalcPercentPage implements OnInit {
     let BoolP = this.validity(this.Perc);
     let BoolV = this.validity(this.Volume);
     if (BoolP && BoolV){
-      this.Output = parseFloat(this.Perc) * parseFloat(this.Volume) * this.VUnit.value / this.PUnit.value;
+      let result = parseFloat(this.Perc.replace(',','.')) * parseFloat(this.Volume.replace(',','.')) * this.VUnit.value / this.PUnit.value;
+      this.Output =result.toPrecision(5);
       console.log(this);
     }
     else{
-      this.toastr.error("A value is empty", "error", {timeOut:600});
+      console.log(this);
     }
     
   }
@@ -96,7 +97,6 @@ export class MassCalcPercentPage implements OnInit {
       return false;
     }
     else{
-      input = input.replace(',','.');
       return true
     }
   }

@@ -12,6 +12,11 @@ ion-content, ion-item{
     --color: white;
     --width:100%;
 }
+ion-select{
+    --align:left;
+/*     position:relative;
+    right:0%; */
+}
 
 h1{
     text-align:center;

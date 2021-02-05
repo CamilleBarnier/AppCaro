@@ -29,11 +29,26 @@
   <ion-select-option *ngFor="let unit of UVolume" [value] ="unit" [selected]="VUnit" >{{unit.unit}}</ion-select-option>
 </ion-select>
 </ion-item> 
-<ion-item>
-  Weight: {{ Output}}
-  <ion-select style="align-self:right" [(ngModel)]="PUnit" interface="action-sheet" (ionChange)= "calcul()">
-    <ion-select-option *ngFor="let unit of UMass" [value] ="unit" [selected]="PUnit" >{{unit.unit}}</ion-select-option>
-  </ion-select>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        Weight:
 </ion-item>
 
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        {{Output}}
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-select style="align-self:right" [(ngModel)]="PUnit" interface="action-sheet" (ionChange)= "calcul()">
+          <ion-select-option *ngFor="let unit of UMass" [value] ="unit" [selected]="PUnit" >{{unit.unit}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
