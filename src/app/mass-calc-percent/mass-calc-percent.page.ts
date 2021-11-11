@@ -24,17 +24,17 @@ export class MassCalcPercentPage implements OnInit {
   UVolume: Unit[] = [
     {
       id: 1,
-      value: 1000,
+      value: 1,
       unit: "L"
     },
     {
       id: 2,
-      value: 1,
+      value: 0.001,
       unit: "mL"
     },
     {
       id: 3,
-      value: 0.001,
+      value: 0.000001,
       unit: "µL"
     }
   ];
