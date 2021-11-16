@@ -1,7 +1,7 @@
 {
   "name": "LabCalculator",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Camille Barnier",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -13,7 +13,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^11.1.1",
+    "@angular/animations": "^11.2.14",
     "@angular/common": "~10.0.0",
     "@angular/core": "~10.0.0",
     "@angular/forms": "~10.0.0",
@@ -21,13 +21,13 @@
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
     "@capacitor/core": "2.4.2",
-    "@ionic-native/core": "^5.0.0",
-    "@ionic-native/splash-screen": "^5.0.0",
-    "@ionic-native/status-bar": "^5.0.0",
-    "@ionic/angular": "^5.0.0",
-    "ngx-toastr": "^13.2.0",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/splash-screen": "^5.36.0",
+    "@ionic-native/status-bar": "^5.36.0",
+    "@ionic/angular": "^5.8.5",
+    "ngx-toastr": "^13.2.1",
     "rxjs": "~6.5.5",
-    "tslib": "^2.0.0",
+    "tslib": "^2.3.1",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
@@ -39,39 +39,41 @@
     "@capacitor/cli": "2.4.2",
     "@ionic/angular-toolkit": "^2.3.0",
     "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "cordova-android": "^9.0.0",
+    "@types/jasminewd2": "^2.0.10",
+    "@types/node": "^12.20.37",
+    "codelyzer": "^6.0.2",
+    "cordova-android": "^10.1.0",
+    "cordova-plugin-androidx": "^3.0.0",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
     "cordova-plugin-splashscreen": "^5.0.4",
     "cordova-plugin-statusbar": "^2.4.3",
-    "cordova-plugin-whitelist": "^1.3.4",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
+    "karma-jasmine-html-reporter": "^1.7.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "^3.9.10"
   },
-  "description": "An Ionic project",
+  "description": "A Lab Calculator project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-androidx": {},
+      "cordova-plugin-androidx-adapter": {}
     },
     "platforms": [
       "android"
