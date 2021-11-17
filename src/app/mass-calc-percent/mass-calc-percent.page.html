@@ -17,13 +17,19 @@
         <ion-row>
           <ion-col>
             <ion-item>
-              <ion-label text-wrap>Desired %: </ion-label>
+              <ion-label text-wrap class="concentration-abr">Conc. : </ion-label>
+              <ion-label text-wrap class="concentration">Concentration : </ion-label>
+            </ion-item> 
+          </ion-col>
+          <ion-col>
+            <ion-item class="input">
+              <ion-input type="tel" [(ngModel)]="Perc" name="Desired %" (ionChange)= "calcul()"></ion-input>
             </ion-item> 
           </ion-col>
           <ion-col>
             <ion-item>
-              <ion-input type="tel" [(ngModel)]="Perc" name="Desired %" (ionChange)= "calcul()"></ion-input>
-            </ion-item> 
+              %
+            </ion-item>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -33,7 +39,7 @@
             </ion-item> 
           </ion-col>
           <ion-col>
-            <ion-item>
+            <ion-item class="input">
             <ion-input type="tel" [(ngModel)]="Volume" name="Volume" (ionChange)= "calcul()"></ion-input>
             </ion-item> 
           </ion-col>
