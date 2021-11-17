@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
+
 
 interface Unit{
   id: number;
@@ -92,8 +92,7 @@ export class VolumeCalculatorPage implements OnInit {
   VUnit: Unit = this.UVolume[0];
   PUnit: Unit = this.UMass[0];
   Output: any;
-  constructor(private activatedRoute: ActivatedRoute,
-              private toastr: ToastrService) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.folder = "Volume Calculator";

@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'volume-calculator',
     loadChildren: () => import('./volume-calculator/volume-calculator.module').then( m => m.VolumeCalculatorPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
 ];
 

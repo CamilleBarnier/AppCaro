@@ -33,6 +33,11 @@ export class AppComponent implements OnInit {
       title: 'Volume Calculator',
       url: 'volume-calculator',
       icon: 'beaker'
+    },
+    {
+      title: 'Contact',
+      url: 'contact',
+      icon: 'mail'
     // },
     // {
     //   title: 'Trash',

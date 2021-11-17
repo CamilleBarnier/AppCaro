@@ -1,0 +1,36 @@
+ion-toolbar{
+    --background: #3b3b3b;
+    --color: white;
+    box-shadow: inset 4px 4px 15px 25px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+ion-card-header{
+    font-size: 20px;
+    --color: white;
+}
+a{
+    text-decoration:none; 
+}
+ion-card {
+    --background: #222222 ;
+    text-decoration:none;
+}
+
+ion-content{
+    --background: black;
+    --color: white;
+    --width:100%;
+}
+ ion-item{
+    --background: #222222;
+    --color: white;
+    --width:100%;
+}
+ion-select{
+    --align:left;
+/*     position:relative;
+    right:0%; */
+}
+
+h1{
+    text-align:center;
+}

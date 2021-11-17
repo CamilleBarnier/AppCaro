@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
 
 interface Unit{
   id: number;
@@ -63,9 +62,8 @@ export class MassCalcPercentPage implements OnInit {
   VUnit: Unit = this.UVolume[0];
   PUnit: Unit = this.UMass[0];
   Output: any;
-  constructor(private activatedRoute: ActivatedRoute,
-              private toastr: ToastrService) {
-                this.folder = "Mass Calculator Percent";
+  constructor(private activatedRoute: ActivatedRoute) {
+                this.folder = "Mass Calculator Concentration";
                }
 
   ngOnInit() {
