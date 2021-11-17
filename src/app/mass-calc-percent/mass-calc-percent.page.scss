@@ -3,12 +3,22 @@ ion-toolbar{
     --color: white;
     box-shadow: inset 4px 4px 15px 25px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+ion-card {
+    --background: #222222 ;
+}
 
 ion-input{
+    --background: #3b3b3b ;
+    border-radius: 10px;
     margin-right:0%;
 }
-ion-content, ion-item{
+ion-content{
     --background: black;
+    --color: white;
+    --width:100%;
+}
+ ion-item{
+    --background: #222222;
     --color: white;
     --width:100%;
 }
