@@ -205,11 +205,11 @@
     }
   },
   "cli": {
-    "defaultCollection": "@ionic/angular-toolkit",
     "analytics": "d6782cc8-6a11-4c1a-9870-b5ace3af7d19",
     "schematicCollections": [
       "@cypress/schematic",
-      "@schematics/angular"
+      "@schematics/angular",
+      "@ionic/angular-toolkit"
     ]
   },
   "schematics": {
