@@ -46,7 +46,7 @@
           <ion-col>
             <ion-item>
             <ion-select [(ngModel)]="VUnit" interface="action-sheet" (ionChange)= "calcul()">
-              <ion-select-option *ngFor="let unit of UVolume" [value] ="unit" [selected]="VUnit" >{{unit.unit}}</ion-select-option>
+              <ion-select-option *ngFor="let unit of UVolume" [value] ="unit">{{unit.unit}}</ion-select-option>
             </ion-select>
             </ion-item> 
           </ion-col>
@@ -71,7 +71,7 @@
           <ion-col>
             <ion-item>
               <ion-select class="ion-float-right" style="align-self:right" [(ngModel)]="PUnit" interface="action-sheet" (ionChange)= "calcul()">
-                <ion-select-option *ngFor="let unit of UMass" [value] ="unit" [selected]="PUnit" >{{unit.unit}}</ion-select-option>
+                <ion-select-option *ngFor="let unit of UMass" [value] ="unit">{{unit.unit}}</ion-select-option>
               </ion-select>
             </ion-item>
           </ion-col>
