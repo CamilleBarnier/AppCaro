@@ -1,6 +1,6 @@
 {
   "name": "labcalculator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Camille Barnier",
   "homepage": "https://ionicframework.com/",
   "scripts": {
@@ -27,6 +27,7 @@
     "@capacitor/status-bar": "^5.0.7",
     "@ionic/angular": "^7.7.3",
     "@ionic/angular-server": "^7.7.3",
+    "@ionic/cordova-builders": "^11.0.0",
     "@ionic/core": "^7.7.3",
     "@npmcli/fs": "^3.1.0",
     "@npmcli/package-json": "^5.0.0",
